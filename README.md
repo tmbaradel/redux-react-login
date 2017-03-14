@@ -3,7 +3,7 @@ Redux/React Login
 
 What it is?:
 ---------------
-This is an example how a login and secured area can be implemented.
+This is an example how a login and secured area can be implemented with react/redux.
 
 How it works?:
 ---------------
