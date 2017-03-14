@@ -1,0 +1,64 @@
+@import "../../styles/global";
+
+.content.login {
+  max-width: 37.5em;
+  width: 85%;
+  margin-top: 2em;
+  border: 1px solid $grey-4;
+}
+
+.login__form {
+  max-width: 30em;
+  padding: 1em 0.75em 0;
+  margin: 0 auto;
+
+  .error {
+    color: $red-errors;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  input,
+  input:focus,
+  input[type='password'] {
+    width: 100%;
+    margin-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    font-size: 1.125em;
+    border: none;
+    border-bottom: 1px dotted $grey-black;
+    box-shadow: none;
+
+    &:nth-of-type(2) {
+      margin-bottom: 2em;
+    }
+  }
+
+  .form-button {
+    width: 100%;
+    left: 0;
+    margin: 0 0 0.75em;
+  }
+}
+
+.login__title {
+  text-align: center;
+  margin: 2.2em 0 2em;
+  font-family: LR-light;
+  font-size: 1.3em;
+  color: $grey-2;
+}
+
+@media screen and (min-width: $medium) {
+  .login__form {
+    padding: 2em 1.5em;
+  }
+
+  .login__title {
+    margin-bottom: 2.5em;
+    font-size: 2.29em;
+  }
+}

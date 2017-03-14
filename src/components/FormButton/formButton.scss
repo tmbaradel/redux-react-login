@@ -1,0 +1,33 @@
+@import "../../styles/global";
+
+.form-button {
+  padding: 0.5em 1.7em;
+  border: 1px solid $grey-black;
+  font-size: 1em;
+  background: $grey-black;
+  color: $white;
+
+  &:disabled {
+    border: 1px solid $grey-4;
+    color: $grey-3;
+    background: $grey-4;
+  }
+}
+
+.submit-button--submit {
+  margin-right: 2em;
+  padding: 1em 1.5em;
+  background: $grey-black;
+  color: $white;
+}
+
+.submit-button--cancel {
+  padding: 1em;
+  color: $grey-black;
+}
+
+@media screen and (min-width: $small) {
+  .form-button {
+    padding: 1em 1.7em;
+  }
+}

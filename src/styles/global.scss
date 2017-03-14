@@ -1,0 +1,144 @@
+// colours
+$white: #ffffff;
+
+$grey-black: #1e1e1e;
+$grey-1: #525252;
+$grey-2: #8c8c8c;
+$grey-3: #c4c4c4;
+$grey-4: #e8e8e8;
+$jlr-green: #005a2b;
+$jlr-red: #9e1b32;
+
+$green-dark: $jlr-green;
+$green-light: $jlr-green;
+$yellow: #bd845b;
+$red: $jlr-red;
+$red-errors: #b30838;
+$red-bright: $red-errors;
+
+$grey: $grey-2;
+
+// remove blue
+$blue: $grey-black;
+
+// breakpoints
+$x-small: 20em;
+$small: 24em;
+$medium: 48em;
+$large: 64em;
+
+// placeholders
+%container-element {
+  position: relative;
+  width: 95%;
+  max-width: 85em;
+  margin: 0 auto;
+}
+
+.content {
+  @extend %container-element;
+  padding: 1em;
+  background: $white;
+
+  @media screen and (min-width: $medium) {
+    padding: 1em;
+  }
+}
+
+// reset
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: LR-demi;
+  background-color: $white;
+  color: $grey-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label {
+  font-family: LR-demi;
+}
+
+.page-title {
+  font-size: 2.5em;
+  margin: 1em 0 0.9em;
+}
+
+.page-title-centred {
+  font-family: LR-light;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.875em;
+  margin: 1.8em 0 0.9em;
+}
+
+li:not(:first-child) {
+  margin-left: 0;
+}
+
+a {
+  color: $grey-black;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $grey-black;
+  }
+}
+
+select {
+  background-color: transparent;
+}
+
+.admin {
+  width: "100%";
+  background-color: $grey;
+  min-height: 1000px;
+  padding: 10%;
+  text-align: center;
+}
+
+// Mixins
+@mixin truncate($width) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.psw-title-truncate {
+  @include truncate(40%);
+  display: inline-block;
+}
+
+.show-title-for-medium {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: $medium) {
+  .h {
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-title-for-medium {
+    display: block;
+    visibility: visible;
+  }
+
+  .hide-title-for-medium {
+    display: none;
+    visibility: hidden;
+  }
+}
