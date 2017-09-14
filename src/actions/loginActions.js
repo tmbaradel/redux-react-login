@@ -86,7 +86,7 @@ export function authUser(username, password) {
       role: 'admin'
     };
     // mocked check that will be performed from the web service
-    if (username !== 'admin' && password !== 'password') {
+    if (username !== 'admin' || password !== 'password') {
       return dispatch(loginError({ message: 'wrong something' }));
     }
 
