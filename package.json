@@ -11,7 +11,7 @@
     "lint": "eslint ./src --ext .js"
   },
   "engines": {
-    "node": "~5.4.0"
+    "node": "~6.11.0"
   },
   "pre-commit": [
     "lint"
@@ -72,12 +72,10 @@
     "karma-cli": "~0.1.1",
     "karma-coverage": "~0.5.3",
     "karma-mocha": "~0.2.1",
-    "karma-phantomjs-launcher": "~0.2.2",
     "karma-sourcemap-loader": "~0.3.6",
     "karma-webpack": "~1.7.0",
     "mocha": "~2.3.4",
     "node-sass": "~4.5.0",
-    "phantomjs": "~1.9.19",
     "postcss-loader": "~0.8.0",
     "pre-commit": "~1.1.2",
     "react-modal": "~0.6.1",
