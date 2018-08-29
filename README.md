@@ -19,15 +19,18 @@ Compared to joshgeller solution I've added a cookie which stores the token
 To get started:
 ---------------
 
-Ensure you have Node v7.* installed. Use [nvm](https://github.com/creationix/nvm) to manage your versions.
+Ensure you have Node v8.* installed. Use [nvm](https://github.com/creationix/nvm) to manage your versions.
 cd into the root of the cloned repo.
 Run the following command to install your dependencies:
-
+```
 npm install
 
-(if you prefer yarn: yarn install)
+(if you prefer yarn: yarn)
 
 npm start
+```
+
+To acess the login use admin && password
 
 Development:
 ------------
