@@ -1,5 +1,8 @@
+This project is deprecated (too many deprecated dependencies)
+============================================================
+
 Redux/React Login
-=================
+-----------------
 
 What it is?:
 ---------------
